@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+.timeline {
+    background-color: rgb(241, 47, 47);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container {
+    margin-top: 57px;
+}
+
+.vertical-timeline-element-date {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+
+.vertical-timeline-element-title, 
+.vertical-timeline-element-subtitle {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.vertical-timeline-element--work {
+    animation: fadeInUp 1s ease-in-out both;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

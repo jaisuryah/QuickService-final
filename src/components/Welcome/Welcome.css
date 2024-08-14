@@ -1,0 +1,196 @@
+/* General Styles */
+
+.main-content {
+  flex: 1;
+}
+
+/* Welcome Page Styles */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 120vh;
+  position: relative;
+}
+
+.garage-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.welcome-section {
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
+  z-index: 1;
+  position: relative;
+  min-height: 100vh;
+}
+
+.welcome-section h1 {
+  margin: 10px 0;
+}
+
+.brandnameletterWel {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(8vw + 20px);
+  color: white;
+  text-shadow: 10px 5px 5px black;
+}
+
+.brandnameletterWel::first-letter {
+  color: red;
+  font-size: calc(10vw + 15px);
+}
+
+.welcome-message {
+  font-size: calc(8vw + 20px);
+  text-shadow: 10px 5px 5px black;
+}
+
+.button0 {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #100b0a;
+  color: white;
+  border: none;
+  width: 25%;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button0:hover {
+  background-color: #241c1b;
+  transform: translateY(-3px);
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 40px 0;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 250px;
+}
+
+.footer-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ff6347;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff6347;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .brandnameletterWel {
+    font-size: calc(10vw + 20px);
+  }
+
+  .welcome-message {
+    font-size: calc(8vw + 20px);
+  }
+
+  .button0 {
+    font-size: 1em;
+    padding: 8px 16px;
+    width: 50%;
+  }
+}
+
+/* Ensure the footer does not overlap other content */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-bottom: 60px; /* Adjust this value based on the footer height */
+}

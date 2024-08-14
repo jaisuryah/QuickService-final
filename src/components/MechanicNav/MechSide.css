@@ -1,0 +1,57 @@
+.side-panel {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+.panel-header {
+    padding: 20px;
+    background-color: #444;
+    text-align: center;
+}
+
+.panel-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.panel-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.panel-item:hover {
+    background-color: #555;
+}
+
+.panel-icon {
+    margin-right: 10px;
+}
+
+/* Mobile specific styles */
+@media (max-width: 768px) {
+    .side-panel {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .panel-item {
+        justify-content: center;
+    }
+
+    .panel-icon {
+        margin-right: 0;
+    }
+}

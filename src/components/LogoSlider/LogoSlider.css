@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+    cursor: grab;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+    cursor: grab;
+}
+
+.logos-slide img {
+    height: 120px;
+    margin: 0 40px;
+    max-width: 100px;
+    height: auto;
+    user-select: none;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+    .logos-slide img {
+        height: 80px;
+        margin: 0 20px;
+    }
+}

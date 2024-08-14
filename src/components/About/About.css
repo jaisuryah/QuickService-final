@@ -1,0 +1,210 @@
+
+.image-bg {
+    background-image: url("https://d2hucwwplm5rxi.cloudfront.net/wp-content/uploads/2022/05/12091941/fuel-induction-C-12-05-1024x640.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  
+  .about-us-container{
+    margin-top: 30px;
+  }
+  .section-1 {
+    background: #f9f9f9;
+    padding: 40px 20px;
+    width: 100%;
+  }
+  
+  .title-1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .content-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .text-1 {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .text-1 p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .subtitle-1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .list-1 {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list-1 li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .list-1 li:before {
+    content: '✔';
+    color: #007bff;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .button-2 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff0000;
+    color: #fff;
+    width: 95%;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .large-image {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .small-images {
+    display: flex;
+    width: 100%;
+  }
+  
+  .small-images img {
+    width: 50%;
+    margin-right: 5px;
+  }
+  
+  .small-images img:last-child {
+    margin-right: 0;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    background: #f9f9f9;
+    color: #555;
+    padding: 20px;
+    height: 200px;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .stat h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .company-overview {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .company-overview h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .company-overview p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .services-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .service-1 {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .service-1 i {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #ff0000;
+  }
+  
+  .service-1 h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .service-1 p {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .trans{
+    width: 100%;
+    height: 300px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 1px black;
+    align-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .content-1 {
+      flex-direction: column;
+    }
+  
+    .images{
+      margin-top: 20px;
+    }
+  
+    .service-1 {
+      width: 100%;
+    }
+  
+    .small-images {
+      flex-direction: column;
+    }
+
+    .large-image{
+        width: 90%;
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+  
+    .small-images img {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+  
+    .small-images img:last-child {
+      margin-bottom: 0;
+    }
+  }
+  

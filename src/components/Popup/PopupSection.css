@@ -1,0 +1,33 @@
+.popup-section {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 30px 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    z-index: 100000;
+}
+
+.popup-icon {
+    margin: 0 10px;
+    color: #ff0000;
+}
+
+.popup-message {
+    flex-grow: 1;
+}
+
+.popup-close {
+    margin-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.popup-close:hover {
+    color: #000;
+}

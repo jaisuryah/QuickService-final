@@ -1,0 +1,105 @@
+.admin-container {
+  display: flex;
+  position: relative;
+}
+
+.admin-side-panel {
+  width: 250px;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+  z-index: 1000;
+}
+
+.admin-side-panel.closed {
+  transform: translateX(-100%);
+}
+
+.hamburger-1 {
+  display: block;
+  width: 10%;
+  font-size: 18px; 
+  color: #fff;
+  background-color: #000000; 
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 11000; 
+}
+
+.hamburger-1.hidden {
+  display: none;
+}
+
+.hamburger-1:hover {
+  background-color: #373333;
+}
+
+.side-panel-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-panel-nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.side-panel-nav ul li {
+  padding: 15px 20px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.side-panel-nav ul li span {
+  margin-left: 10px;
+}
+
+.side-panel-nav ul li:hover {
+  background-color: #1e2a38;
+}
+
+.side-panel-nav ul li.logout {
+  margin-top: auto;
+  color: red;
+  font-weight: bold;
+}
+
+.brandnameletterNavAd {
+  color: white;
+  font-size: 30px;
+  text-indent: 10px;
+  font-weight: bold;
+}
+
+.brandnameletterNavAd::first-letter {
+  color: red;
+  font-size: 35px;
+  text-indent: 10px;
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .admin-side-panel {
+    width: 200px;
+  }
+}
